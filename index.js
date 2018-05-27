@@ -12,6 +12,7 @@ function destructivelyUpdateObjectWithKeyAndValue(obj,key,value){
 }
 
 function deleteFromObjectByKey(obj,key){
+  //create a duplicate of obj so that obj can remain unchanged
   var obj1 = Object.assign({},obj)
   delete obj1[key]
   return obj1
